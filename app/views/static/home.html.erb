@@ -1,49 +1,96 @@
-<div class="text-center space-y-6 mb-8 lg:mb-20 <%= content_header_wrapper %>">
+<section aria-label="Strapline" class="text-center space-y-6 mb-8 lg:mb-20 <%= content_header_wrapper %>">
   <h1 class="text-4xl font-bold lg:text-5xl text-brand-black">Design solutions made easy</h1>
   <p class="text-[18px] px-8 lg:px-0">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-</div>
-<section class="pb-24 lg:pb-32">
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 <%= page_wrapper %> transition-all duration-300">
-    <div class="h-40 rounded-lg md:h-full bg-galactic-blue"></div>
+</section>
+
+<section aria-label="service teasers" class="pb-24 lg:pb-32">
+  <div class="grid gap-6 text-2xl font-bold text-white transition-all duration-300 md:grid-cols-2 lg:grid-cols-3 <%= page_wrapper %>">
+    <div class="relative h-[364px] rounded-lg md:h-full bg-galactic-blue">
+      <div class="absolute top-6 right-6">
+        <%= inline_svg 'graphic-design' %>
+      </div>
+      <div class="absolute bottom-6 left-6">
+        <h2>Graphic Design</h2>
+      </div>
+    </div>
 
     <div class="grid gap-6 md:grid-cols-2 lg:col-span-1">
-      <div class="h-40 col-span-1 rounded-lg bg-summer-yellow"></div>
-      <div class="h-40 col-span-1 rounded-lg bg-salmon"></div>
-      <div class="h-40 col-span-2 rounded-lg bg-light-red"></div>
+      <div class="relative h-40 col-span-1 rounded-lg bg-summer-yellow">
+        <div class="absolute top-6 right-6">
+          <%= inline_svg 'ux-design', class: 'h-[64px] w-[64px]' %>
+        </div>
+        <div class="absolute bottom-6 left-6">
+          <h2>UI/UX</h2>
+        </div>
+      </div>
+      <div class="relative h-40 col-span-1 rounded-lg bg-salmon">
+        <div class="absolute top-6 right-6">
+          <%= inline_svg 'apps-design' %>
+        </div>
+        <div class="absolute bottom-6 left-6">
+          <h2>Apps</h2>
+        </div>
+      </div>
+      <div class="relative h-40 col-span-2 rounded-lg bg-light-red">
+        <div class="absolute top-6 right-6">
+          <%= inline_svg 'illustrations' %>
+        </div>
+        <div class="absolute bottom-6 left-6">
+          <h2>Illustrations</h2>
+        </div>
+      </div>
     </div>
 
     <div class="grid gap-6 md:grid-cols-2 md:col-span-2 lg:col-span-1">
-      <div class="h-40 rounded-lg lg:col-span-2 bg-cyan"></div>
-      <div class="h-40 rounded-lg lg:col-span-2 bg-deep-purple"></div>
+      <div class="relative h-40 rounded-lg lg:col-span-2 bg-cyan">
+        <div class="absolute top-6 right-6">
+          <%= inline_svg 'photography' %>
+        </div>
+        <div class="absolute bottom-6 left-6">
+          <h2>Photography</h2>
+        </div>
+      </div>
+      <div class="relative h-40 rounded-lg lg:col-span-2 bg-deep-purple">
+        <div class="absolute top-6 right-6">
+          <%= inline_svg 'motion-graphics' %>
+        </div>
+        <div class="absolute bottom-6 left-6">
+          <h2>Motion Graphics</h2>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="<%= page_wrapper %> flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-32 pb-24 lg:pb-20">
-  <div class="h-[300px] w-[300px] lg:w-[445px] lg:h-[445px] overflow-hidden rounded-full bg-cyan flex-shrink-0"></div>
+  <div class="h-[300px] w-[300px] lg:w-[445px] lg:h-[445px] overflow-hidden rounded-full bg-cyan flex-shrink-0">
+    <div class="transform translate-y-20 md:translate-y-[100px] -translate-x-[20px]">
+      <%= inline_svg 'ux-design', class: 'h-24 w-24 md:h-[128px] md:w-[128px]' %>
+    </div>
+    <div class="transform translate-y-28 translate-x-[320px] md:translate-y-20">
+      <%= inline_svg 'apps-design-alt' %>
+    </div>
+    <div class="transform -translate-y-[200px] translate-x-3 md:-translate-y-[240px]">
+      <%= image_tag("person.png", class: 'h-[300px] lg:h-[460px]') %>
+    </div>
+
+  </div>
   <div class="px-12 space-y-6 text-center lg:text-left lg:px-0">
-    <h2 class="text-2xl font-bold lg:text-3xl text-brand-black">I'm Amy, and I'd love to work on your next project</h2>
+    <h2 id="intro" class="text-2xl font-bold lg:text-3xl text-brand-black">I'm Amy, and I'd love to work on your next project</h2>
     <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
     <a href="#" class="<%= button_secondary %>">Free Consultation</a>
   </div>
 </section>
 
-
-<section class="pb-20 overflow-hidden lg:pb-32 ">
-  <h2 class="mb-8 text-2xl font-bold text-center lg:text-3xl text-brand-black lg:mb-16">My Work</h2>
-  <div class="flex gap-6 overflow-x-auto lg:gap-8 snap-x">
-    <div class="w-[270px] lg:w-[540px] h-180 lg:h-[360px] bg-black bg-opacity-5 rounded flex-shrink-0 snap-center"></div>
-    <div class="w-[270px] lg:w-[540px] h-180 lg:h-[360px] bg-black bg-opacity-5 rounded flex-shrink-0 snap-center"></div>
-    <div class="w-[270px] lg:w-[540px] h-180 lg:h-[360px] bg-black bg-opacity-5 rounded flex-shrink-0 snap-center"></div>
-    <div class="w-[270px] lg:w-[540px] h-180 lg:h-[360px] bg-black bg-opacity-5 rounded flex-shrink-0 snap-center"></div>
-    <div class="w-[270px] lg:w-[540px] h-180 lg:h-[360px] bg-black bg-opacity-5 rounded flex-shrink-0 snap-center"></div>
-  </div>
+<section aria-labelledby="my work" class="pb-20 overflow-hidden lg:pb-32 ">
+  <h2 id="my-work" class="mb-8 text-2xl font-bold text-center lg:text-3xl text-brand-black lg:mb-16">My Work</h2>
+  <%= render '/static/carousel' %>
 </section>
 
 <div class="pb-32">
-  <section class="<%= page_wrapper %> bg-brand-black text-white flex items-center gap-6 lg:gap-48 text-center lg:text-left rounded-lg">
+  <section aria-labelledby="booking" class="<%= page_wrapper %> bg-brand-black text-white flex items-center gap-6 lg:gap-48 text-center lg:text-left rounded-lg">
     <div class="lg:basis-[540px] py-12 pl-16">
-      <h2 class="mb-2 text-2xl font-bold lg:text-3xl">Book a call with me</h2>
+      <h2 id="booking" class="mb-2 text-2xl font-bold lg:text-3xl">Book a call with me</h2>
       <p class="text-light-cream">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
     </div>
     <div>
@@ -51,6 +98,11 @@
     </div>
   </section>
 </div>
+
+
+
+
+
 
 <div class="hidden">
   <button class="<%= button_primary %>">Free Consultation</button>

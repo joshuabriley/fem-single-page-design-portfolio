@@ -12,10 +12,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
 
   <body class="bg-light-cream font-medium text-medium-brown <%= app_wrapper %>">
-    <header class="flex justify-between items-center pt-8 mb-8 lg:mb-16 <%= page_wrapper %>">
+    <header class="flex justify-between items-center pt-8 mb-8 lg:mb-16 <%= page_wrapper %> gap-6">
       <a href="/" aria-label="return to home page" class="flex items-center justify-center w-12 h-12 lg:h-16 lg:w-16 bg-brand-black">
         <div aria-label="company logo" role="img" class="w-6 h-6 border-4 rounded-full lg:w-8 lg:h-8 border-light-cream"></div>
       </a>

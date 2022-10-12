@@ -1,0 +1,11 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="64" width="128" height="64" rx="32" fill="#552049"/>
+<circle cx="96" cy="96" r="28" stroke="#FFF7F0" stroke-width="8"/>
+<rect y="28" width="8" height="8" fill="#030303"/>
+<rect x="8" y="28" width="8" height="8" fill="#030303"/>
+<rect x="56" y="28" width="8" height="8" fill="#030303"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 0L128 64V0H64Z" fill="#F6A560"/>
+<rect x="64" y="28" width="8" height="8" fill="#030303"/>
+<rect x="112" y="28" width="8" height="8" fill="#030303"/>
+<rect x="120" y="28" width="8" height="8" fill="#030303"/>
+</svg>
